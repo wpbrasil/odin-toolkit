@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odin Toolkit v0.0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-10-10 16:35-0300\n"
-"PO-Revision-Date: 2016-10-10 16:35-0300\n"
+"POT-Creation-Date: 2016-10-10 17:51-0300\n"
+"PO-Revision-Date: 2016-10-10 17:51-0300\n"
 "Last-Translator: Rafael Funchal <rafaelfunchal@gmail.com>\n"
 "Language-Team: WordPress Brasil Group\n"
 "Language: pt_BR\n"
@@ -18,6 +18,196 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: ..\n"
+
+# @ odin
+#: ../inc/classes/abstracts/abstract-front-end-form.php:293
+msgid "Submit"
+msgstr "Enviar"
+
+# @ odin
+#: ../inc/classes/abstracts/abstract-front-end-form.php:336
+msgid "Form submitted successfully!"
+msgstr "Formulário enviado com sucesso!"
+
+# @ odin
+#: ../inc/classes/abstracts/abstract-front-end-form.php:609
+#: ../inc/classes/abstracts/abstract-front-end-form.php:621
+#, php-format
+msgid "%s is required."
+msgstr "%s é um campo obrigatório."
+
+# @ odin
+#: ../inc/classes/abstracts/abstract-front-end-form.php:615
+#, php-format
+msgid "%s must be an email address valid."
+msgstr "%s precisa ser um endereço de email válido"
+
+# @ odin
+#: ../inc/classes/class-contact-form.php:182
+#, php-format
+msgid "Message sent by the form %s in %s at %s"
+msgstr "Mensagem enviada pelo formulário %s em %s às %s"
+
+# @ odin
+#: ../inc/classes/class-metabox.php:98 ../inc/classes/class-metabox.php:555
+#: ../inc/classes/class-term-meta.php:83 ../inc/classes/class-term-meta.php:490
+#: ../inc/classes/class-theme-options.php:85
+#: ../inc/classes/class-theme-options.php:614
+#: ../inc/classes/class-user-meta.php:68 ../inc/classes/class-user-meta.php:405
+msgid "Add images in gallery"
+msgstr "Adicionar imagens na galeria"
+
+# @ odin
+#: ../inc/classes/class-metabox.php:99 ../inc/classes/class-term-meta.php:84
+#: ../inc/classes/class-theme-options.php:86
+#: ../inc/classes/class-user-meta.php:69
+msgid "Add in gallery"
+msgstr "Adicionar na galeria"
+
+# @ odin
+#: ../inc/classes/class-metabox.php:100 ../inc/classes/class-metabox.php:516
+#: ../inc/classes/class-metabox.php:544 ../inc/classes/class-term-meta.php:85
+#: ../inc/classes/class-term-meta.php:451
+#: ../inc/classes/class-term-meta.php:479
+#: ../inc/classes/class-theme-options.php:87
+#: ../inc/classes/class-theme-options.php:565
+#: ../inc/classes/class-theme-options.php:603
+#: ../inc/classes/class-user-meta.php:70 ../inc/classes/class-user-meta.php:366
+#: ../inc/classes/class-user-meta.php:394
+msgid "Remove image"
+msgstr "Remover imagem"
+
+# @ odin
+#: ../inc/classes/class-metabox.php:101 ../inc/classes/class-term-meta.php:86
+#: ../inc/classes/class-theme-options.php:88
+#: ../inc/classes/class-user-meta.php:71
+msgid "Choose a file"
+msgstr "Selecione um arquivo"
+
+# @ odin
+#: ../inc/classes/class-metabox.php:102 ../inc/classes/class-term-meta.php:87
+#: ../inc/classes/class-theme-options.php:89
+#: ../inc/classes/class-user-meta.php:72
+msgid "Add file"
+msgstr "Adicionar arquivo"
+
+# @ odin
+#: ../inc/classes/class-metabox.php:493 ../inc/classes/class-term-meta.php:428
+#: ../inc/classes/class-theme-options.php:531
+#: ../inc/classes/class-user-meta.php:343
+msgid "Select file"
+msgstr "Selecionar arquivo"
+
+# @ odin
+#: ../inc/classes/class-metabox.php:516 ../inc/classes/class-term-meta.php:451
+#: ../inc/classes/class-theme-options.php:565
+#: ../inc/classes/class-user-meta.php:366
+msgid "Select image"
+msgstr "Selecionar imagem"
+
+#: ../inc/classes/class-post-status.php:69
+#, php-format
+msgid "&nbsp;<span class=\"count\">(%s)</span>"
+msgid_plural "&nbsp;<span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+# @ odin
+#: ../inc/classes/class-post-type.php:67 ../inc/classes/class-post-type.php:74
+#: ../inc/classes/class-taxonomy.php:69 ../inc/classes/class-taxonomy.php:78
+#, php-format
+msgid "%ss"
+msgstr "%ss"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:68 ../inc/classes/class-taxonomy.php:70
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:69 ../inc/classes/class-taxonomy.php:72
+#, php-format
+msgid "View %s"
+msgstr "Ver %s"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:70 ../inc/classes/class-taxonomy.php:73
+#, php-format
+msgid "Edit %s"
+msgstr "Editar %s"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:71 ../inc/classes/class-taxonomy.php:74
+#, php-format
+msgid "Search %s"
+msgstr "Pesquisar %s"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:72 ../inc/classes/class-taxonomy.php:75
+#, php-format
+msgid "Update %s"
+msgstr "Atualizar  %s"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:73 ../inc/classes/class-taxonomy.php:76
+#: ../inc/classes/class-taxonomy.php:77
+#, php-format
+msgid "Parent %s:"
+msgstr "Parente %s"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:75
+msgid "Add New"
+msgstr "Adicionar Novo"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:76 ../inc/classes/class-taxonomy.php:79
+#, php-format
+msgid "Add New %s"
+msgstr "Adicionar Novo %s"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:77 ../inc/classes/class-taxonomy.php:80
+#, php-format
+msgid "New %s"
+msgstr "Novo %s"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:78 ../inc/classes/class-taxonomy.php:81
+#, php-format
+msgid "All %ss"
+msgstr "Todos os %ss"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:79
+#, php-format
+msgid "No %s found"
+msgstr "Nenhum %s encontrado"
+
+# @ odin
+#: ../inc/classes/class-post-type.php:80
+#, php-format
+msgid "No %s found in Trash"
+msgstr "Nenhum %s encontrado na Lixeira"
+
+# @ odin
+#: ../inc/classes/class-taxonomy.php:71
+#, php-format
+msgid "Add or Remove %ss"
+msgstr "Adicionar ou Remover %ss"
+
+# @ odin
+#: ../inc/classes/class-taxonomy.php:82
+#, php-format
+msgid "Separate %ss with comma"
+msgstr "Separe %ss com vírgula"
+
+# @ odin
+#: ../inc/classes/class-taxonomy.php:83
+#, php-format
+msgid "Choose from %ss most used"
+msgstr "Escolher entre os %ss mais usados"
 
 # @ odin
 #~ msgid "Not Found"
@@ -287,118 +477,6 @@ msgstr ""
 # @ odin
 #~ msgid "Add a menu"
 #~ msgstr "Adicionar um menu"
-
-# @ odin
-#~ msgid "Message sent by the form %s in %s at %s"
-#~ msgstr "Mensagem enviada pelo formulário %s em %s às %s"
-
-# @ odin
-#~ msgid "Add images in gallery"
-#~ msgstr "Adicionar imagens na galeria"
-
-# @ odin
-#~ msgid "Add in gallery"
-#~ msgstr "Adicionar na galeria"
-
-# @ odin
-#~ msgid "Remove image"
-#~ msgstr "Remover imagem"
-
-# @ odin
-#~ msgid "Choose a file"
-#~ msgstr "Selecione um arquivo"
-
-# @ odin
-#~ msgid "Add file"
-#~ msgstr "Adicionar arquivo"
-
-# @ odin
-#~ msgid "Select file"
-#~ msgstr "Selecionar arquivo"
-
-# @ odin
-#~ msgid "Select image"
-#~ msgstr "Selecionar imagem"
-
-# @ odin
-#~ msgid "%ss"
-#~ msgstr "%ss"
-
-# @ odin
-#~ msgid "%s"
-#~ msgstr "%s"
-
-# @ odin
-#~ msgid "View %s"
-#~ msgstr "Ver %s"
-
-# @ odin
-#~ msgid "Edit %s"
-#~ msgstr "Editar %s"
-
-# @ odin
-#~ msgid "Search %s"
-#~ msgstr "Pesquisar %s"
-
-# @ odin
-#~ msgid "Update %s"
-#~ msgstr "Atualizar  %s"
-
-# @ odin
-#~ msgid "Parent %s:"
-#~ msgstr "Parente %s"
-
-# @ odin
-#~ msgid "Add New"
-#~ msgstr "Adicionar Novo"
-
-# @ odin
-#~ msgid "Add New %s"
-#~ msgstr "Adicionar Novo %s"
-
-# @ odin
-#~ msgid "New %s"
-#~ msgstr "Novo %s"
-
-# @ odin
-#~ msgid "All %ss"
-#~ msgstr "Todos os %ss"
-
-# @ odin
-#~ msgid "No %s found"
-#~ msgstr "Nenhum %s encontrado"
-
-# @ odin
-#~ msgid "No %s found in Trash"
-#~ msgstr "Nenhum %s encontrado na Lixeira"
-
-# @ odin
-#~ msgid "Add or Remove %ss"
-#~ msgstr "Adicionar ou Remover %ss"
-
-# @ odin
-#~ msgid "Separate %ss with comma"
-#~ msgstr "Separe %ss com vírgula"
-
-# @ odin
-#~ msgid "Choose from %ss most used"
-#~ msgstr "Escolher entre os %ss mais usados"
-
-# @ odin
-#~ msgid "Submit"
-#~ msgstr "Enviar"
-
-# @ odin
-#~ msgid "Form submitted successfully!"
-#~ msgstr "Formulário enviado com sucesso!"
-
-# @ odin
-#~ msgid "%s is required."
-#~ msgstr "%s é um campo obrigatório."
-
-# @ odin
-#~ msgid "%s must be an email address valid."
-#~ msgstr "%s precisa ser um endereço de email válido"
 
 #~ msgid "Facebook Like Box"
 #~ msgstr "Caixa de Curtir do Facebook"
