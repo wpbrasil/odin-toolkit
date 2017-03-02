@@ -32,10 +32,11 @@ class Odin_Theme_Options {
 	 * @param string $title      Page title.
 	 * @param string $capability User capability.
 	 */
-	public function __construct( $id, $title, $capability = 'manage_options' ) {
+	public function __construct( $id, $title, $capability = 'manage_options', $parent = 'options-general.php' ) {
 		$this->id         = $id;
 		$this->title      = $title;
 		$this->capability = $capability;
+		$this->parent	  = $parent;
 
 		// Actions.
 		add_action( 'admin_menu', array( &$this, 'add_page' ) );
@@ -47,7 +48,8 @@ class Odin_Theme_Options {
 	 * Add Settings Theme page.
 	 */
 	public function add_page() {
-		add_theme_page(
+		add_submenu_page(
+			$this->parent,
 			$this->title,
 			$this->title,
 			$this->capability,
@@ -275,7 +277,6 @@ class Odin_Theme_Options {
 		}
 
 		return $default;
-
 	}
 
 	/**
@@ -423,7 +424,7 @@ class Odin_Theme_Options {
 		// Sets current option.
 		$current = $this->get_option( $tab, $id, $args['default'] );
 
-		$html = sprintf( '<input type="checkbox" id="%1$s" name="%2$s[%1$s]" value="1"%3$s%4$s />', $id, $tab, checked( 1, $current, false ), $this->build_field_attributes( $attrs ) );
+		$html = sprintf( '<input type="checkbox" id="%1$s" name="%2$s[%1$s]" value="1" %3$s %4$s />', $id, $tab, checked( 1, $current, false ), $this->build_field_attributes( $attrs ) );
 
 		// Displays the description.
 		if ( $args['description'] ) {

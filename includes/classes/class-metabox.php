@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Odin_Metabox class.
@@ -9,6 +10,7 @@
  * @author   WPBrasil
  * @version  2.1.5
  */
+
 class Odin_Metabox {
 
 	/**
