@@ -48,7 +48,7 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
 		function __construct() {
 			$this->plugin_dir = plugin_dir_path( __FILE__ );
 			add_action( 'init', array( $this, 'load_textdomain' ) );
-			add_action( 'init', array( $this, 'include_odin_toolkit' ), 1 );
+			add_action( 'init', array( $this, 'include_odin_toolkit' ), 0 );
 		}
 
 		/**
@@ -61,6 +61,20 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
 				self::$instance = new self;
 			}
 			return self::$instance;
+		}
+
+		/**
+		 * Return file name in odin pattern from class name.
+		 *
+		 * @param  	string $class
+		 * @return 	string
+		 * @since 	1.0.0
+		 */
+		private function get_file_name_from_class( $class ) {
+			$class = str_replace( 'Odin_', '', $class );
+			$class = str_replace( '_', '-', $class );
+			$class = strtolower( $class );
+			return 'class-' . $class . '.php';
 		}
 
 		/**
@@ -89,18 +103,18 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
 		 * @param  string $class_name Name of the class being requested
 		 */
 		public function odin_toolkit_autoload_classes( $class_name ) {
-			echo 'Trying to load ', $class_name, ' via ', __METHOD__, "()\n";
 			if ( 0 !== strpos( $class_name, 'Odin' ) ) {
 				return;
 			}
 
+			$file = $this->get_file_name_from_class( $class_name );
 			$path = 'includes/classes';
 
 			if ( 'Odin_Front_End_Form' === $class_name ) {
 				$path .= '/abstracts';
 			}
 
-			include_once( ODIN_TOOLKIT_DIR . "/$path/$class_name.php" );
+			include_once( ODIN_TOOLKIT_DIR . "/$path/$file" );
 		}
 
 		/**
@@ -116,15 +130,3 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
  * Initialize the plugin actions.
  */
 add_action( 'plugins_loaded', array( 'Odin_Toolkit', 'init' ) );
-
-function register_post_types() {
-	echo '<pre>';
-	var_dump( spl_autoload_functions() );
-	echo '</pre>';
-	$video = new Odin_Post_Type(
-	    'Video', // Nome (Singular) do Post Type.
-	    'video' // Slug do Post Type.
-	);
-}
-
-add_action( 'init', 'register_post_types', 10 );
