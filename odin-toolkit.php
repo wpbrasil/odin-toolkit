@@ -11,7 +11,7 @@
  * Domain Path: languages/
  */
 
- // Previne acesso direto
+ // Prevents direct access
  if ( ! defined( 'ABSPATH' ) ) {
  	exit;
  }
@@ -48,7 +48,7 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
 		function __construct() {
 			$this->plugin_dir = plugin_dir_path( __FILE__ );
 			add_action( 'init', array( $this, 'load_textdomain' ) );
-			add_action( 'init', array( $this, 'include_odin_toolkit' ), 0 );
+			add_action( 'init', array( $this, 'includes' ), 0 );
 		}
 
 		/**
@@ -64,7 +64,7 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
 		}
 
 		/**
-		 * Return file name in odin pattern from class name.
+		 * Return file name in odin pattern from class name. {Odin_Class_Name}
 		 *
 		 * @param  	string $class
 		 * @return 	string
@@ -83,17 +83,13 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
 		 *
 		 * @since  1.0.0
 		 */
-		public function include_odin_toolkit() {
+		public function includes() {
 			if ( ! defined( 'ODIN_TOOLKIT_VERSION' ) ) {
 				define( 'ODIN_TOOLKIT_VERSION', self::VERSION );
 			}
 
-			if ( ! defined( 'ODIN_TOOLKIT_DIR' ) ) {
-				define( 'ODIN_TOOLKIT_DIR', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
-			}
-
 			// Now kick off the class autoloader.
-			spl_autoload_register( array( $this, 'odin_toolkit_autoload_classes' ) );
+			spl_autoload_register( array( $this, 'autoload_classes' ) );
 		}
 
 		/**
@@ -102,7 +98,7 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
 		 * @since  1.0.0
 		 * @param  string $class_name Name of the class being requested
 		 */
-		public function odin_toolkit_autoload_classes( $class_name ) {
+		public function autoload_classes( $class_name ) {
 			if ( 0 !== strpos( $class_name, 'Odin' ) ) {
 				return;
 			}
@@ -114,7 +110,7 @@ if( ! class_exists( 'Odin_Toolkit' ) ) {
 				$path .= '/abstracts';
 			}
 
-			include_once( ODIN_TOOLKIT_DIR . "/$path/$file" );
+			include_once( $this->plugin_dir . "/$path/$file" );
 		}
 
 		/**
