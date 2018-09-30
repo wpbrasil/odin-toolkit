@@ -4,7 +4,7 @@
  *
  * Built Contact Forms.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Contact Form
  * @author   WPBrasil
  * @version  2.3.0

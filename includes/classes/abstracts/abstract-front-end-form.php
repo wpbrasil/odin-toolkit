@@ -4,7 +4,7 @@
  *
  * Built Front-end Forms.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Front-end Form
  * @author   WPBrasil
  * @version  2.3.1

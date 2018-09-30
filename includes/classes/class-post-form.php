@@ -4,7 +4,7 @@
  *
  * Built Front End Post Forms.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Post Form
  * @author   WPBrasil
  * @version  2.1.4

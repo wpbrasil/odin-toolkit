@@ -4,7 +4,7 @@
  *
  * Built Custom Post Types.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Post Types
  * @author   WPBrasil
  * @version  2.1.4

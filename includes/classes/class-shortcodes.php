@@ -4,7 +4,7 @@
  *
  * Built Shortcodes.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Shortcodes
  * @author   WPBrasil
  * @version  2.1.4
@@ -41,6 +41,8 @@ class Odin_Shortcodes {
 		add_shortcode( 'tooltip', array( $this, 'tooltip' ) );
 		add_shortcode( 'qrcode', array( $this, 'qrcode' ) );
 		add_shortcode( 'clear', array( $this, 'clear' ) );
+		add_shortcode( 'olho', array( $this, 'olho_de_texto' ) );
+		add_shortcode( 'citacao', array( $this, 'blockquote' ) );
 	}
 
 	/**
@@ -360,7 +362,7 @@ class Odin_Shortcodes {
 	 * @return string          Tabs HTML.
 	 */
 	function tabs( $atts, $content = null ) {
-		return '<ul class="nav nav-tabs odin-tabs">' . str_replace( '<br />', '', do_shortcode( $content ) ) . '</ul>';
+		return '<ul class="nav nav-tabs odin-tabs" role="tablist">' . str_replace( '<br />', '', do_shortcode( $content ) ) . '</ul>';
 	}
 
 	/**
@@ -377,10 +379,10 @@ class Odin_Shortcodes {
 			'active' => false
 		), $atts ) );
 
-		$html = '<li';
+		$html = '<li role="presentation"';
 		$html .= ( $active ) ? ' class="active"' : '';
 		$html .= '>';
-		$html .= '<a href="#' . esc_attr( $id ) . '">';
+		$html .= '<a href="#' . esc_attr( $id ) . '" role="tab" data-toggle="tab">';
 		$html .= do_shortcode( $content );
 		$html .= '</a>';
 		$html .= '</li>';
@@ -444,7 +446,7 @@ class Odin_Shortcodes {
 
 		$html = '<div class="tab-pane';
 		$html .= ( $active ) ? ' active"' : '"';
-		$html .= ' id="' . esc_attr( $id ) . '">';
+		$html .= ' id="' . esc_attr( $id ) . '" role="tabpanel">';
 		$html .= do_shortcode( $content );
 		$html .= '</div>';
 
@@ -691,6 +693,43 @@ class Odin_Shortcodes {
 		return '<br class="clear" />';
 	}
 
+	/**
+	 * Adiciona o shortcode para criar olho de texto no conteúdo
+	 *
+	 * @param  array    $atts atributos do shortcode
+	 * @param  string   $content conteúdo do shortcode
+	 *
+	 * @return string   Conteúdo manipulado do shortcode.
+	 */
+	function olho_de_texto( $atts, $content = null ) {
+		extract( shortcode_atts( array(
+			'class'     => '',
+		), $atts ) );
+
+		return '<blockquote class="olho ' . $class . '"><span>' . do_shortcode( $content ) . '</span></blockquote>';
+	}
+
+	/**
+	 * Adiciona o shortcode para criar citações em matérias
+	 *
+	 * @param  array    $atts atributos do shortcode
+	 * @param  string   $content conteúdo do shortcode
+	 *
+	 * @return string   Conteúdo manipulado do shortcode.
+	 */
+	function blockquote( $atts, $content = null ) {
+		$a = shortcode_atts( array(
+			'credito' => '',
+		), $atts );
+
+		$html  = '<blockquote class="featured-quote"><div class="bq-container"><span>';
+		$html .= do_shortcode( $content );
+		$html .= '</span>';
+
+		!( empty( $a['credito'] ) ) ? $html .= '<cite>' . esc_attr( $a['credito'] ) . '</cite>' : '';
+		$html .= '</div></blockquote>';
+		return $html;
+	}
 }
 
 new Odin_Shortcodes;

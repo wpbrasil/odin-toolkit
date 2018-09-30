@@ -5,7 +5,7 @@
  *
  * Built Metaboxs.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Metabox
  * @author   WPBrasil
  * @version  2.1.5
@@ -89,8 +89,8 @@ class Odin_Metabox {
 			wp_enqueue_script( 'jquery-ui-sortable' );
 
 			// Metabox.
-			wp_enqueue_script( 'odin-admin', get_template_directory_uri() . '/core/assets/js/admin.js', array( 'jquery' ), null, true );
-			wp_enqueue_style( 'odin-admin', get_template_directory_uri() . '/core/assets/css/admin.css', array(), null, 'all' );
+			wp_enqueue_script( 'odin-admin', plugins_url( '../../assets/js/admin.js', __FILE__ ), array( 'jquery' ), null, true );
+			wp_enqueue_style( 'odin-admin', plugins_url( '../../assets/css/admin.css', __FILE__ ), array(), null, 'all' );
 
 			// Localize strings.
 			wp_localize_script(
@@ -506,10 +506,9 @@ class Odin_Metabox {
 	protected function field_image( $id, $current ) {
 
 		// Gets placeholder image.
-		$image = apply_filters( 'odin_placeholder_path', get_template_directory_uri() . '/core/assets/images/placeholder.png' );
+		$image = apply_filters( 'odin_placeholder_path', plugins_url( '../../assets/images/placeholder.png', __FILE__ ) );
 		$html  = '<div class="odin-upload-image">';
-		$html  .= '<span class="default-image">' . $image . '</span>';
-
+		
 		if ( $current ) {
 			$image = wp_get_attachment_image_src( $current, 'thumbnail' );
 			$image = $image[0];

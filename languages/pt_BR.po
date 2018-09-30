@@ -9,7 +9,7 @@ msgstr ""
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Enchasteg: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Poedit 1.8.8\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -19,36 +19,36 @@ msgstr ""
 "X-Textdomain-Support: yes\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-# @ odin
+# @ haste
 #: ../inc/classes/abstracts/abstract-front-end-form.php:293
 msgid "Submit"
 msgstr "Enviar"
 
-# @ odin
+# @ haste
 #: ../inc/classes/abstracts/abstract-front-end-form.php:336
 msgid "Form submitted successfully!"
 msgstr "Formulário enviado com sucesso!"
 
-# @ odin
+# @ haste
 #: ../inc/classes/abstracts/abstract-front-end-form.php:609
 #: ../inc/classes/abstracts/abstract-front-end-form.php:621
 #, php-format
 msgid "%s is required."
 msgstr "%s é um campo obrigatório."
 
-# @ odin
+# @ haste
 #: ../inc/classes/abstracts/abstract-front-end-form.php:615
 #, php-format
 msgid "%s must be an email address valid."
 msgstr "%s precisa ser um endereço de email válido"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-contact-form.php:182
 #, php-format
 msgid "Message sent by the form %s in %s at %s"
 msgstr "Mensagem enviada pelo formulário %s em %s às %s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-metabox.php:98 ../inc/classes/class-metabox.php:555
 #: ../inc/classes/class-term-meta.php:83 ../inc/classes/class-term-meta.php:490
 #: ../inc/classes/class-theme-options.php:85
@@ -57,14 +57,14 @@ msgstr "Mensagem enviada pelo formulário %s em %s às %s"
 msgid "Add images in gallery"
 msgstr "Adicionar imagens na galeria"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-metabox.php:99 ../inc/classes/class-term-meta.php:84
 #: ../inc/classes/class-theme-options.php:86
 #: ../inc/classes/class-user-meta.php:69
 msgid "Add in gallery"
 msgstr "Adicionar na galeria"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-metabox.php:100 ../inc/classes/class-metabox.php:516
 #: ../inc/classes/class-metabox.php:544 ../inc/classes/class-term-meta.php:85
 #: ../inc/classes/class-term-meta.php:451
@@ -77,28 +77,28 @@ msgstr "Adicionar na galeria"
 msgid "Remove image"
 msgstr "Remover imagem"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-metabox.php:101 ../inc/classes/class-term-meta.php:86
 #: ../inc/classes/class-theme-options.php:88
 #: ../inc/classes/class-user-meta.php:71
 msgid "Choose a file"
 msgstr "Selecione um arquivo"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-metabox.php:102 ../inc/classes/class-term-meta.php:87
 #: ../inc/classes/class-theme-options.php:89
 #: ../inc/classes/class-user-meta.php:72
 msgid "Add file"
 msgstr "Adicionar arquivo"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-metabox.php:493 ../inc/classes/class-term-meta.php:428
 #: ../inc/classes/class-theme-options.php:531
 #: ../inc/classes/class-user-meta.php:343
 msgid "Select file"
 msgstr "Selecionar arquivo"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-metabox.php:516 ../inc/classes/class-term-meta.php:451
 #: ../inc/classes/class-theme-options.php:565
 #: ../inc/classes/class-user-meta.php:366
@@ -112,222 +112,222 @@ msgid_plural "&nbsp;<span class=\"count\">(%s)</span>"
 msgstr[0] ""
 msgstr[1] ""
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:67 ../inc/classes/class-post-type.php:74
 #: ../inc/classes/class-taxonomy.php:69 ../inc/classes/class-taxonomy.php:78
 #, php-format
 msgid "%ss"
 msgstr "%ss"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:68 ../inc/classes/class-taxonomy.php:70
 #, php-format
 msgid "%s"
 msgstr "%s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:69 ../inc/classes/class-taxonomy.php:72
 #, php-format
 msgid "View %s"
 msgstr "Ver %s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:70 ../inc/classes/class-taxonomy.php:73
 #, php-format
 msgid "Edit %s"
 msgstr "Editar %s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:71 ../inc/classes/class-taxonomy.php:74
 #, php-format
 msgid "Search %s"
 msgstr "Pesquisar %s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:72 ../inc/classes/class-taxonomy.php:75
 #, php-format
 msgid "Update %s"
 msgstr "Atualizar  %s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:73 ../inc/classes/class-taxonomy.php:76
 #: ../inc/classes/class-taxonomy.php:77
 #, php-format
 msgid "Parent %s:"
 msgstr "Parente %s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:75
 msgid "Add New"
 msgstr "Adicionar Novo"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:76 ../inc/classes/class-taxonomy.php:79
 #, php-format
 msgid "Add New %s"
 msgstr "Adicionar Novo %s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:77 ../inc/classes/class-taxonomy.php:80
 #, php-format
 msgid "New %s"
 msgstr "Novo %s"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:78 ../inc/classes/class-taxonomy.php:81
 #, php-format
 msgid "All %ss"
 msgstr "Todos os %ss"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:79
 #, php-format
 msgid "No %s found"
 msgstr "Nenhum %s encontrado"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-post-type.php:80
 #, php-format
 msgid "No %s found in Trash"
 msgstr "Nenhum %s encontrado na Lixeira"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-taxonomy.php:71
 #, php-format
 msgid "Add or Remove %ss"
 msgstr "Adicionar ou Remover %ss"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-taxonomy.php:82
 #, php-format
 msgid "Separate %ss with comma"
 msgstr "Separe %ss com vírgula"
 
-# @ odin
+# @ haste
 #: ../inc/classes/class-taxonomy.php:83
 #, php-format
 msgid "Choose from %ss most used"
 msgstr "Escolher entre os %ss mais usados"
 
-# @ odin
+# @ haste
 #~ msgid "Not Found"
 #~ msgstr "Nada Encontrado"
 
-# @ odin
+# @ haste
 #~ msgid ""
 #~ "It looks like nothing was found at this location. Maybe try a search?"
 #~ msgstr ""
 #~ "Parece que nada foi encontrado neste local. Talvez tentar uma pesquisa?"
 
-# @ odin
+# @ haste
 #~ msgid "Daily Archives: %s"
 #~ msgstr "Arquivos Diários: %s"
 
-# @ odin
+# @ haste
 #~ msgid "Monthly Archives: %s"
 #~ msgstr "Arquivos Mensais: %s"
 
-# @ odin
+# @ haste
 #~ msgctxt "monthly archives date format"
 #~ msgid "F Y"
 #~ msgstr "F Y"
 
-# @ odin
+# @ haste
 #~ msgid "Yearly Archives: %s"
 #~ msgstr "Arquivos Anuais: %s"
 
-# @ odin
+# @ haste
 #~ msgctxt "yearly archives date format"
 #~ msgid "Y"
 #~ msgstr "Y"
 
-# @ odin
+# @ haste
 #~ msgid "Archives"
 #~ msgstr "Arquivos"
 
-# @ odin
+# @ haste
 #~ msgid "URL:"
 #~ msgstr "URL:"
 
-# @ odin
+# @ haste
 #~ msgid "Back to %s"
 #~ msgstr "Voltar para %s"
 
-# @ odin
+# @ haste
 #~ msgid "<span class=\"meta-nav\">&larr;</span> %s"
 #~ msgstr "<span class=\"meta-nav\">&larr;</span> %s"
 
-# @ odin
+# @ haste
 #~ msgid "All posts by %s"
 #~ msgstr "Todas as publicações por %s"
 
-# @ odin
+# @ haste
 #~ msgid "Category Archives: %s"
 #~ msgstr "Arquivo da Categoria: %s"
 
-# @ odin
+# @ haste
 #~ msgid ""
 #~ "This post is password protected. Enter the password to view all comments."
 #~ msgstr ""
 #~ "Esse post é protegido por senha. Informe a senha para ver todos os "
 #~ "comentários."
 
-# @ odin
+# @ haste
 #~ msgid "0 Comments"
 #~ msgstr "0 Comentários"
 
-# @ odin
+# @ haste
 #~ msgid "1 Comment"
 #~ msgstr "1 Comentário"
 
-# @ odin
+# @ haste
 #~ msgid "% Comments"
 #~ msgstr "% Comentários"
 
-# @ odin
+# @ haste
 #~ msgid "to"
 #~ msgstr "para"
 
-# @ odin
+# @ haste
 #~ msgid "&larr; Old Comments"
 #~ msgstr "&larr; Comentários Antigos"
 
-# @ odin
+# @ haste
 #~ msgid "New Comments &rarr;"
 #~ msgstr "Novos Comentários &rarr;"
 
-# @ odin
+# @ haste
 #~ msgid "Comments closed."
 #~ msgstr "Comentários não são permitidos."
 
-# @ odin
+# @ haste
 #~ msgid "Comment"
 #~ msgstr "Comentário"
 
-# @ odin
+# @ haste
 #~ msgid "Name"
 #~ msgstr "Nome"
 
-# @ odin
+# @ haste
 #~ msgid "E-mail"
 #~ msgstr "E-mail"
 
-# @ odin
+# @ haste
 #~ msgid "Website"
 #~ msgstr "Website"
 
-# @ odin
+# @ haste
 #~ msgid "Nothing Found"
 #~ msgstr "Nada Encontrado"
 
-# @ odin
+# @ haste
 #~ msgid ""
 #~ "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 #~ msgstr ""
 #~ "Pronto para publicar o seu primeiro post? <a href=\"%1$s\">Comece agora "
 #~ "aqui</a>."
 
-# @ odin
+# @ haste
 #~ msgid ""
 #~ "Sorry, but nothing matched your search terms. Please try again with some "
 #~ "different keywords."
@@ -335,7 +335,7 @@ msgstr "Escolher entre os %ss mais usados"
 #~ "Desculpe, mas nada foi encontrado com os termos da sua pesquisa. Por "
 #~ "favor, tente novamente com algumas palavras-chave diferentes."
 
-# @ odin
+# @ haste
 #~ msgid ""
 #~ "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 #~ "searching can help."
@@ -343,138 +343,138 @@ msgstr "Escolher entre os %ss mais usados"
 #~ "Parece que não conseguimos encontrar o que você está procurando. Talvez a "
 #~ "pesquisa pode ajudar."
 
-# @ odin
+# @ haste
 #~ msgid "Pages:"
 #~ msgstr "Páginas:"
 
-# @ odin
+# @ haste
 #~ msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 #~ msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
 
-# @ odin
+# @ haste
 #~ msgid "Posted in:"
 #~ msgstr "Publicado em:"
 
-# @ odin
+# @ haste
 #~ msgctxt "Used between list items, there is a space after the comma."
 #~ msgid ", "
 #~ msgstr ", "
 
-# @ odin
+# @ haste
 #~ msgid "Tagged as:"
 #~ msgstr "Marcado como:"
 
-# @ odin
+# @ haste
 #~ msgid "Leave a comment"
 #~ msgstr "Deixe um comentário"
 
-# @ odin
+# @ haste
 #~ msgid "All rights reserved"
 #~ msgstr "Todos os direitos reservados"
 
-# @ odin
+# @ haste
 #~ msgid ""
-#~ "Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> "
+#~ "Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Haste</a> "
 #~ "forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</"
 #~ "a>."
 #~ msgstr ""
-#~ "Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> "
+#~ "Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Haste</a> "
 #~ "forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</"
 #~ "a>."
 
-# @ odin
+# @ haste
 #~ msgid "Main Menu"
 #~ msgstr "Menu Principal"
 
-# @ odin
+# @ haste
 #~ msgid "Main Sidebar"
 #~ msgstr "Sidebar Principal"
 
-# @ odin
+# @ haste
 #~ msgid "Site Main Sidebar"
 #~ msgstr "Sidebar principal do site"
 
-# @ odin
+# @ haste
 #~ msgid "Skip to content"
 #~ msgstr "Pular para o conteúdo"
 
-# @ odin
+# @ haste
 #~ msgid "Toggle navigation"
 #~ msgstr "Alternar navegação"
 
-# @ odin
+# @ haste
 #~ msgid "Search:"
 #~ msgstr "Pesquisar:"
 
-# @ odin
+# @ haste
 #~ msgid "Search"
 #~ msgstr "Pesquisa"
 
-# @ odin
+# @ haste
 #~ msgid "Image total size: %s pixels"
 #~ msgstr "Tamanho total da imagem: %s pixels"
 
-# @ odin
+# @ haste
 #~ msgid "Full image link"
 #~ msgstr "Link da imagem completa"
 
-# @ odin
+# @ haste
 #~ msgid "&larr; Previous image"
 #~ msgstr "&larr; Imagem anterior"
 
-# @ odin
+# @ haste
 #~ msgid "Next image &rarr;"
 #~ msgstr "Próxima imagem &rarr;"
 
-# @ odin
+# @ haste
 #~ msgid "Search Results for: %s"
 #~ msgstr "Resultado de Busca por: %s"
 
-# @ odin
+# @ haste
 #~ msgid "Tag Archives: %s"
 #~ msgstr "Arquivo da Tag: %s"
 
-# @ odin
+# @ haste
 #~ msgid "&laquo; Previous"
 #~ msgstr "&laquo; Anterior"
 
-# @ odin
+# @ haste
 #~ msgid "Next &raquo;"
 #~ msgstr "Próximo &raquo;"
 
-# @ odin
+# @ haste
 #~ msgid "Related Posts"
 #~ msgstr "Artigos Relacionados"
 
-# @ odin
+# @ haste
 #~ msgid "Home"
 #~ msgstr "Início"
 
-# @ odin
+# @ haste
 #~ msgid "%sCategory: %s%s"
 #~ msgstr "%sCategoria: %s%s"
 
-# @ odin
+# @ haste
 #~ msgid "%sTag: %s%s"
 #~ msgstr "%sTag: %s%s"
 
-# @ odin
+# @ haste
 #~ msgid "%sSearch result for: &quot;%s&quot;%s"
 #~ msgstr "%sResultado da busca para: &quot;%s&quot;%s"
 
-# @ odin
+# @ haste
 #~ msgid "Posted by"
 #~ msgstr "Publicado por"
 
-# @ odin
+# @ haste
 #~ msgid "404 Error"
 #~ msgstr "Erro 404"
 
-# @ odin
+# @ haste
 #~ msgid "Page %s"
 #~ msgstr "Página %s"
 
-# @ odin
+# @ haste
 #~ msgid "Add a menu"
 #~ msgstr "Adicionar um menu"
 
@@ -517,42 +517,42 @@ msgstr "Escolher entre os %ss mais usados"
 #~ msgid "Show Border"
 #~ msgstr "Exibir borda"
 
-# @ odin
+# @ haste
 #~ msgid "Pingback:"
 #~ msgstr "Pingback:"
 
-# @ odin
+# @ haste
 #~ msgid "Edit"
 #~ msgstr "Editar"
 
-# @ odin
+# @ haste
 #~ msgid "in"
 #~ msgstr "em"
 
-# @ odin
+# @ haste
 #~ msgid "at"
 #~ msgstr "as"
 
-# @ odin
+# @ haste
 #~ msgid "said:"
 #~ msgstr "disse:"
 
-# @ odin
+# @ haste
 #~ msgid "Your comment is awaiting moderation."
 #~ msgstr "Seu comentário está aguardando moderação."
 
-# @ odin
+# @ haste
 #~ msgid "Respond"
 #~ msgstr "Responder"
 
-# @ odin
+# @ haste
 #~ msgid "Sticky"
 #~ msgstr "Destacado"
 
-# @ odin
+# @ haste
 #~ msgid "Posted in"
 #~ msgstr "Publicado em"
 
-# @ odin
+# @ haste
 #~ msgid "by"
 #~ msgstr "por"

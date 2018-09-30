@@ -4,7 +4,7 @@
  *
  * Built Custom Taxonomies.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Taxonomy
  * @author   WPBrasil
  * @version  2.1.4

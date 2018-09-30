@@ -4,7 +4,7 @@
  *
  * Helper for get the value of Theme Options.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Options
  * @author   WPBrasil
  * @version  2.1.4

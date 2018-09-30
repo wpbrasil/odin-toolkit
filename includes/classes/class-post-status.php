@@ -4,7 +4,7 @@
  *
  * Build Custom Post Status
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Metabox
  * @author   WPBrasil
  * @version  2.1.4
@@ -118,7 +118,7 @@ class Odin_Post_Status {
 	 */
 	public function scripts() {
 		// Load admin JS
-		wp_enqueue_script( 'odin-custom-status', get_template_directory_uri() . '/core/assets/js/admin-custom-status.js', array( 'jquery' ), null, true );
+		wp_enqueue_script( 'odin-custom-status', plugins_url( '../../assets/js/admin-custom-status.js' ), array( 'jquery' ), null, true );
 
 	}
 }

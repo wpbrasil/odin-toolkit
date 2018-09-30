@@ -5,7 +5,7 @@
  *
  * Built Shortcodes Menu on editor text.
  *
- * @package  Odin
+ * @package  OdinToolkit
  * @category Shortcodes
  * @author   WPBrasil
  * @version  2.9.0
@@ -42,10 +42,9 @@ class Odin_Shortcodes_Menu {
 	 * @return array          Odin TinyMCE plugin.
 	 */
 	public function add_shortcode_tinymce_plugin( $plugins ) {
-		$plugins[ 'odin_shortcodes' ] = get_template_directory_uri() . "/core/assets/js/editor-shortcodes.js";
+		$plugins[ 'odin_shortcodes' ] = plugins_url( '../../assets/js/editor-shortcodes.js', __FILE__ );
 
 		return $plugins;
-
 	}
 
 	/**
@@ -56,7 +55,6 @@ class Odin_Shortcodes_Menu {
 	 */
 	public function register_shortcode_button( $buttons ) {
 		array_push( $buttons, '|', 'odin' );
-
 		return $buttons;
 	}
 
@@ -68,10 +66,7 @@ class Odin_Shortcodes_Menu {
 	 * @return array
 	 */
 	public function add_tinymce_locales( $locales ) {
-		$locales[ 'odin_shortcodes' ] = plugin_dir_path( __FILE__ ) . '/../../inc/odin-shortcodes-editor-i18n.php';
-
+		$locales[ 'odin_shortcodes' ] = plugin_dir_path( __FILE__ ) . '/odin-shortcodes-editor-i18n.php';
 		return $locales;
 	}
 }
-
-new Odin_Shortcodes_Menu;
