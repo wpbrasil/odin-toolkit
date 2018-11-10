@@ -70,3 +70,5 @@ class Odin_Shortcodes_Menu {
 		return $locales;
 	}
 }
+
+ new Odin_Shortcodes_Menu;
